@@ -1,5 +1,10 @@
 import { ReactNode } from 'react'
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "Refund & Return Policy",
+    description: "Read the Refund & Return Policy of Pangat POS.",
+};
 interface SectionProps {
     title: string
     children: ReactNode

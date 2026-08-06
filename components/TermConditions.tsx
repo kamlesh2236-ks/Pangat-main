@@ -1,6 +1,11 @@
 import Link from 'next/link'
 import { ReactNode } from 'react'
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "Terms & Conditions",
+    description: "Read the Terms & Conditions of Pangat POS.",
+};
 interface SectionProps {
     title: string
     children: ReactNode

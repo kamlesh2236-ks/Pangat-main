@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import Layout from '../components/Layout'
+import Schema from "../components/Schema";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://pangat-main.vercel.app'),
@@ -12,6 +13,8 @@ export const metadata: Metadata = {
 
   description:
     'Pangat POS is a cloud-based restaurant POS software with QR ordering, billing, inventory management, kitchen display and online ordering.',
+
+ 
 
   keywords: [
     'Restaurant POS',
@@ -71,6 +74,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Schema />
         <Layout>{children}</Layout>
       </body>
     </html>
